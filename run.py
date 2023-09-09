@@ -86,7 +86,12 @@ class Game:
                 self.player.change_empathy(-random.randint(1, 5))
                 self.player.change_humanity(-random.randint(1, 5))
                 break
-                
+                elif choice == "t":
+                print("You try to negotiate.")
+                self.player.change_empathy(random.randint(5, 20))
+                self.player.change_humanity(random.randint(5, 20))
+                break
+
                 
 
 
