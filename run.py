@@ -62,6 +62,10 @@ class Game:
                 if pin == "Ren3":
             print("Hack successful! You win!")
             return True, False  # player_win, or player lose health
+                    else:
+            print("Hack failed. Security has detected your attempt!")
+            self.player.health = 50
+            return self.combat_encounter()
 
 
 
