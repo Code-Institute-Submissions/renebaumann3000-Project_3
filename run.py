@@ -22,7 +22,13 @@ class Game:
     self.player = None
     self.opponent = Character("Cyber-Thug")
 
+# Resets the game by taking player name
     def reset_game(self):
     name = input("Enter your name: ")
     self.player = Character(name)
     print(f"Welcome, {self.player.name} to Cyberpunk A text based RPG!")
+
+        while True:
+        life_path = input("Choose your life path ([A]dventurer, [H]acker): ").lower()
+        if life_path in ['a', 'h']:
+        return life_path
