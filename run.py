@@ -32,3 +32,4 @@ class Game:
         life_path = input("Choose your life path ([A]dventurer, [H]acker): ").lower()
         if life_path in ['a', 'h']:
         return life_path
+        print("Invalid choice. Please type 'A' for Adventurer or 'H' for Hacker.")
