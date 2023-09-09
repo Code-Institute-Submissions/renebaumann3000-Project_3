@@ -15,6 +15,10 @@ class Character:
         self.empathy = empathy
         self.humanity = humanity
 
+            # Reduces the health of the character by the given damage
+    def take_damage(self, damage):
+        self.health -= damage
+
 
         # Defines the main game and its interactions
 class Game:
