@@ -27,6 +27,10 @@ class Character:
     def change_humanity(self, delta):
         self.humanity += delta
 
+            # Checks if character is defeated based on health, empathy, and humanity
+    def is_defeated(self):
+        return self.health <= 0 or (self.empathy <= Character.LOSS_EMPATHY_THRESHOLD and self.humanity <= Character.LOSS_HUMANITY_THRESHOLD)
+
 
         # Defines the main game and its interactions
 class Game:
