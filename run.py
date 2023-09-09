@@ -22,5 +22,7 @@ class Game:
     self.player = None
     self.opponent = Character("Cyber-Thug")
 
-        def reset_game(self):
-        name = input("Enter your name: ")
+    def reset_game(self):
+    name = input("Enter your name: ")
+    self.player = Character(name)
+    print(f"Welcome, {self.player.name} to Cyberpunk A text based RPG!")
