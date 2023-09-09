@@ -67,6 +67,14 @@ class Game:
             self.player.health = 50
             return self.combat_encounter()
 
+                # Displays the status of a given character
+    def display_character_status(self, character):
+        print(f"{character.name} - Health: {character.health}, Empathy: {character.empathy}, Humanity: {character.humanity}")
+
+            # Displays the status of a given character
+    def display_character_status(self, character):
+        print(f"{character.name} - Health: {character.health}, Empathy: {character.empathy}, Humanity: {character.humanity}")
+
 
 
                 # Main game loop to keep playing or restart after each round
