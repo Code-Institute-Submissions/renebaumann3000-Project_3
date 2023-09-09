@@ -124,6 +124,8 @@ class Game:
         elif opponent_win:
             print("GAME OVER! You lost!")
 
+            return player_win, opponent_win
+
                 
 
                 
