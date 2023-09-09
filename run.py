@@ -31,6 +31,10 @@ class Character:
     def is_defeated(self):
         return self.health <= 0 or (self.empathy <= Character.LOSS_EMPATHY_THRESHOLD and self.humanity <= Character.LOSS_HUMANITY_THRESHOLD)
 
+            # Checks if character has won based on empathy and humanity
+    def has_won(self):
+        return self.empathy >= Character.WIN_EMPATHY_THRESHOLD and self.humanity >= Character.WIN_HUMANITY_THRESHOLD
+
 
         # Defines the main game and its interactions
 class Game:
