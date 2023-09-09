@@ -15,6 +15,8 @@ def __init__(self, name, health=100, empathy=15, humanity=15):
     self.empathy = empathy
     self.humanity = humanity
 
+
+
 # Defines the main game and its interactions
 class Game:
 # Initializes game with a player and an opponent character
@@ -22,8 +24,8 @@ class Game:
     self.player = None
     self.opponent = Character("Cyber-Thug")
 
-# Resets the game by taking player name
-    def reset_game(self):
+# Resets the game by taking player name and setting life path
+def reset_game(self):
     name = input("Enter your name: ")
     self.player = Character(name)
     print(f"Welcome, {self.player.name} to Cyberpunk A text based RPG!")
@@ -33,3 +35,13 @@ class Game:
         if life_path in ['a', 'h']:
         return life_path
         print("Invalid choice. Please type 'A' for Adventurer or 'H' for Hacker.")
+
+
+# Main game loop to keep playing or restart after each round
+def play(self):
+        while True:
+        life_path = self.reset_game()
+        if life_path == 'a':
+        player_win, opponent_win = self.combat_encounter()
+        elif life_path == 'h':
+        player_win, opponent_win = self.hack_encounter()
