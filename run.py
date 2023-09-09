@@ -14,3 +14,10 @@ def __init__(self, name, health=100, empathy=15, humanity=15):
     self.health = health
     self.empathy = empathy
     self.humanity = humanity
+
+# Defines the main game and its interactions
+class Game:
+# Initializes game with a player and an opponent character
+    def __init__(self):
+    self.player = None
+    self.opponent = Character("Cyber-Thug")
