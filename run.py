@@ -111,6 +111,21 @@ class Game:
             if player_win or opponent_win:
                 return player_win, opponent_win
 
+                # Checks if the game has reached an end condition
+    def check_end_conditions(self):
+        player_win = (self.player.empathy >= Character.WIN_EMPATHY_THRESHOLD and self.player.humanity >= Character.WIN_HUMANITY_THRESHOLD) or \
+                     self.opponent.is_defeated()
+
+        opponent_win = (self.opponent.empathy >= Character.WIN_EMPATHY_THRESHOLD and self.opponent.humanity >= Character.WIN_HUMANITY_THRESHOLD) or \
+                       self.player.is_defeated()
+
+        if player_win:
+            print("You won!")
+        elif opponent_win:
+            print("GAME OVER! You lost!")
+
+                
+
                 
 
 
