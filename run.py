@@ -50,3 +50,8 @@ def play(self):
         prompt = "Play again? (y/n): "
         elif opponent_win:
         prompt = "Try again? (y/n): "
+
+        while True:
+        play_again = input(prompt).lower()
+        if play_again in ['y', 'n']:
+        break
