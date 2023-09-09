@@ -21,3 +21,6 @@ class Game:
     def __init__(self):
     self.player = None
     self.opponent = Character("Cyber-Thug")
+
+        def reset_game(self):
+        name = input("Enter your name: ")
