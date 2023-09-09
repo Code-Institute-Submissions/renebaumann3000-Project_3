@@ -19,6 +19,10 @@ class Character:
     def take_damage(self, damage):
         self.health -= damage
 
+            # Adjusts the empathy of the character
+    def change_empathy(self, delta):
+        self.empathy += delta
+
 
         # Defines the main game and its interactions
 class Game:
