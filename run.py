@@ -45,3 +45,8 @@ def play(self):
         player_win, opponent_win = self.combat_encounter()
         elif life_path == 'h':
         player_win, opponent_win = self.hack_encounter()
+
+        if player_win:
+        prompt = "Play again? (y/n): "
+        elif opponent_win:
+        prompt = "Try again? (y/n): "
