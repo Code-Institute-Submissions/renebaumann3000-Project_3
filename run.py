@@ -57,9 +57,10 @@ class Game:
  ╚═════╝   ╚═╝   ╚═════╝ ╚══════╝╚═╝  ╚═╝╚═╝      ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═╝
         """
         print(banner)
-        
+
     # Initializes game with a player and an opponent character
     def __init__(self):
+        Game.display_intro()  # Call the staticmethod directly
         self.player = None
         self.opponent = Character("Cyber-Thug")
 
