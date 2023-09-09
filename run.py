@@ -59,6 +59,10 @@ class Game:
         print(f"{self.player.name}, you chose to hack!")
         pin = input("You have to enter a 4 digit pin.\n" "The pin is a combination of letters Aa - Zz and numbers 0-9.\n" "If the code is correct, you will win the game. If the code is incorrect, you will lose 50 Health.\n" "You only have one try. Hack or Fail!\n" "Enter the 4-digit pin: ")
 
+                if pin == "Ren3":
+            print("Hack successful! You win!")
+            return True, False  # player_win, or player lose health
+
 
 
                 # Main game loop to keep playing or restart after each round
