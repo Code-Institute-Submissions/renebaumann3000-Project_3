@@ -94,6 +94,9 @@ class Game:
                 else:
                 print("Invalid choice. Please type 'F' to Fight or 'T' to Talk.")
 
+                # Display the opponent's status after their turn
+        self.display_character_status(self.opponent)
+
                 
 
 
