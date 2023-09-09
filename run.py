@@ -23,6 +23,10 @@ class Character:
     def change_empathy(self, delta):
         self.empathy += delta
 
+            # Adjusts the humanity of the character
+    def change_humanity(self, delta):
+        self.humanity += delta
+
 
         # Defines the main game and its interactions
 class Game:
