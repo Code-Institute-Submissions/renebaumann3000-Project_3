@@ -196,6 +196,10 @@ class Game:
         )
         print("+---------------+----------+--------+---------+")
 
+    # Function to display the status has been modified to call the grid
+    def display_character_status(self, character):
+        self.display_grid()
+
 
 # Checks if the script is being run directly and starts the game
 if __name__ == "__main__":
