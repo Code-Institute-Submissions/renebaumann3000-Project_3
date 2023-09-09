@@ -55,3 +55,4 @@ def play(self):
         play_again = input(prompt).lower()
         if play_again in ['y', 'n']:
         break
+        print("Invalid choice. Please type 'y' to continue or 'n' to exit.")
