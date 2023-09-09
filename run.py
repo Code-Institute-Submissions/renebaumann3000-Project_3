@@ -106,6 +106,11 @@ class Game:
             if player_win or opponent_win:
                 return player_win, opponent_win
 
+                self.opponent_turn()
+            player_win, opponent_win = self.check_end_conditions()
+            if player_win or opponent_win:
+                return player_win, opponent_win
+
                 
 
 
