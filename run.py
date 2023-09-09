@@ -80,6 +80,14 @@ class Game:
         while True:
             choice = input("Will you [F]ight or [T]alk? ").lower()
             if choice == "f":
+                player_damage = random.randint(5, 20)
+                print(f"You attack the {self.opponent.name} and deal {player_damage} damage.")
+                self.opponent.take_damage(player_damage)
+                self.player.change_empathy(-random.randint(1, 5))
+                self.player.change_humanity(-random.randint(1, 5))
+                break
+                
+                
 
 
 
