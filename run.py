@@ -35,7 +35,6 @@ class Character:
     def has_won(self):
         return self.empathy >= Character.WIN_EMPATHY_THRESHOLD and self.humanity >= Character.WIN_HUMANITY_THRESHOLD
 
-
         # Defines the main game and its interactions
 class Game:
     # Initializes game with a player (set later) and an opponent character
@@ -54,6 +53,12 @@ class Game:
             if life_path in ['a', 'h']:
                 return life_path
             print("Invalid choice. Please type 'A' for Adventurer or 'H' for Hacker.")
+
+                # Manages the hacking encounter in the game
+    def hack_encounter(self):
+        print(f"{self.player.name}, you chose to hack!")
+        pin = input("You have to enter a 4 digit pin.\n" "The pin is a combination of letters Aa - Zz and numbers 0-9.\n" "If the code is correct, you will win the game. If the code is incorrect, you will lose 50 Health.\n" "You only have one try. Hack or Fail!\n" "Enter the 4-digit pin: ")
+
 
 
                 # Main game loop to keep playing or restart after each round
