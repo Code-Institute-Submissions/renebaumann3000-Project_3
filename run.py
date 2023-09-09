@@ -91,6 +91,8 @@ class Game:
                 self.player.change_empathy(random.randint(5, 20))
                 self.player.change_humanity(random.randint(5, 20))
                 break
+                else:
+                print("Invalid choice. Please type 'F' to Fight or 'T' to Talk.")
 
                 
 
