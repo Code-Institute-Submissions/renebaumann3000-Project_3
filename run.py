@@ -181,6 +181,21 @@ class Game:
             if play_again != "y":
                 break
 
+                # Function to format and print the grid
+
+    def display_grid(self):
+        print("+---------------+----------+--------+---------+")
+        print("|  Character    |  Health  | Empathy| Humanity|")
+        print("+---------------+----------+--------+---------+")
+        print(
+            f"| {self.player.name:14} | {self.player.health:8} | {self.player.empathy:6} | {self.player.humanity:7} |"
+        )
+        print("|---------------|----------|--------|---------|")
+        print(
+            f"| {self.opponent.name:14} | {self.opponent.health:8} | {self.opponent.empathy:6} | {self.opponent.humanity:7} |"
+        )
+        print("+---------------+----------+--------+---------+")
+
 
 # Checks if the script is being run directly and starts the game
 if __name__ == "__main__":
