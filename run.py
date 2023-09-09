@@ -75,6 +75,12 @@ class Game:
     def display_character_status(self, character):
         print(f"{character.name} - Health: {character.health}, Empathy: {character.empathy}, Humanity: {character.humanity}")
 
+            # Handles the player's turn during combat
+    def player_turn(self):
+        while True:
+            choice = input("Will you [F]ight or [T]alk? ").lower()
+            if choice == "f":
+
 
 
                 # Main game loop to keep playing or restart after each round
