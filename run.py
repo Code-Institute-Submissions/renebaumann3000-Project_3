@@ -97,6 +97,15 @@ class Game:
                 # Display the opponent's status after their turn
         self.display_character_status(self.opponent)
 
+        # Manages the combat encounter in the game
+    def combat_encounter(self):
+        print(f"You encounter a hostile {self.opponent.name}!")
+        while True:
+            self.player_turn()
+            player_win, opponent_win = self.check_end_conditions()
+            if player_win or opponent_win:
+                return player_win, opponent_win
+
                 
 
 
