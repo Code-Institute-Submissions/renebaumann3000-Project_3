@@ -34,3 +34,8 @@
 
 5. #### Implimentation of a Data Model:
 - The code implements a data model through the Character class to manage character attributes (health, empathy, and humanity) and the Game class to handle game logic, encounters, and user interactions. It also incorporates features related to combat encounters and hacking challenges.
+
+
+## Credits:
+- ASCII Generator: https://manytools.org/hacker-tools/ascii-banner/#google_vignette
+- PEP8 Formatter: https://black.vercel.app/
