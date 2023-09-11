@@ -113,13 +113,15 @@ class Game:
                     f"You attack the {self.opponent.name} and deal {player_damage} damage."
                 )
                 self.opponent.take_damage(player_damage)
-                self.player.change_empathy(-random.randint(1, 5))
-                self.player.change_humanity(-random.randint(1, 5))
+                # In the player_turn method, when the player chooses to fight (decrease empathy and humanity)
+                self.player.change_empathy(-random.randint(1, 5)) # Decrease empathy due to combat
+                self.player.change_humanity(-random.randint(1, 5)) # Decrease humanity due to combat
                 break
             elif choice == "t":
                 print("You try to negotiate.")
-                self.player.change_empathy(random.randint(5, 20))
-                self.player.change_humanity(random.randint(5, 20))
+                # In the player_turn method, when the player chooses to negotiate (increase empathy and humanity)
+                self.player.change_empathy(random.randint(5, 20)) # Increase empathy due to negotiation
+                self.player.change_humanity(random.randint(5, 20)) # Increase humanity due to negotiation
                 break
             else:
                 print("Invalid choice. Please type 'F' to Fight or 'T' to Talk.")
@@ -135,12 +137,14 @@ class Game:
                 f"The {self.opponent.name} attacks and deals {opponent_damage} damage to you."
             )
             self.player.take_damage(opponent_damage)
-            self.opponent.change_empathy(-random.randint(1, 5))
-            self.opponent.change_humanity(-random.randint(1, 5))
+            # In the opponents_turn method, when the opponent chooses to fight (decrease empathy and humanity)
+            self.opponent.change_empathy(-random.randint(1, 5)) # Decrease empathy due to combat
+            self.opponent.change_humanity(-random.randint(1, 5)) # Decrease humanity due to combat
         else:
             print(f"The {self.opponent.name} tries to negotiate.")
-            self.opponent.change_empathy(random.randint(5, 20))
-            self.opponent.change_humanity(random.randint(5, 20))
+            # In the opponents_turn method, when the opponent chooses to negotiate (increase empathy and humanity)
+            self.opponent.change_empathy(random.randint(5, 20)) # Increase empathy due to negotiation
+            self.opponent.change_humanity(random.randint(5, 20)) # Increase humanity due to negotiation
         # Display the opponent's status after their turn
         self.display_character_status(self.opponent)
 

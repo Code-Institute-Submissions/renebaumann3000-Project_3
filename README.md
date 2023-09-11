@@ -26,6 +26,7 @@
 - The play method is the main game loop, where the player can choose to play again after winning or losing.
 - The display_grid method displays character status in a tabular format.
 - The display_character_status method has been modified to call the display_grid method for character status display.
+- The display_intro method is a static method and doesn't operate on any instance-specific data or attributes of the Game class. It serves the purpose of displaying a game banner, which is a generic introductory message.
 
 4. #### Main Execution:
 - The script checks if it's being run directly (__name__ == "__main__") and creates an instance of the Game class.
