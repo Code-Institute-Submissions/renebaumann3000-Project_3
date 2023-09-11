@@ -1,32 +1,35 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![game_logic](/assets/documentation/game_logic.png "game_logic")
 
-Welcome,
+## Code Breakdown:
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
+1. #### Importing Modules
+- The script imports the random module to generate random numbers for various game events.
 
-## Reminders
+2. #### Character Class:
+- The Character class defines the attributes and behaviors of characters in the game.
+- Constants are defined within the class for winning and losing thresholds related to empathy and humanity.
+- The __init__ method initializes a character with a name, health, empathy, and humanity.
+- Methods like take_damage, change_empathy, change_humanity, is_defeated, and has_won are defined to modify and check character status.
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+3. #### Game Class:
 
-## Creating the Heroku app
+- The Game class defines the main game and its interactions.
+- The display_intro method displays an introductory banner using a multiline string.
+- The __init__ method initializes the game and sets up the player and an opponent character (Cyber-Thug).
+- The reset_game method collects the player's name and life path choice (Adventurer or Hacker) and sets up the game accordingly.
+- The hack_encounter method simulates a hacking encounter where the player tries to enter a PIN code.
+- The display_character_status method displays the status of a character, including health, empathy, and humanity.
+- The player_turn method handles the player's turn during combat, allowing them to choose between fighting or talking.
+- The opponent_turn method handles the opponent's turn during combat.
+- The combat_encounter method manages the combat encounter between the player and the opponent.
+- The check_end_conditions method checks if the game has reached an end condition, either a player win or an opponent win.
+- The play method is the main game loop, where the player can choose to play again after winning or losing.
+- The display_grid method displays character status in a tabular format.
+- The display_character_status method has been modified to call the display_grid method for character status display.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+4. #### Main Execution:
+- The script checks if it's being run directly (__name__ == "__main__") and creates an instance of the Game class.
+- It then starts the game by calling the play method.
 
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
----
-
-Happy coding!
+5. #### Implimentation of a Data Model:
+- The code implements a data model through the Character class to manage character attributes (health, empathy, and humanity) and the Game class to handle game logic, encounters, and user interactions. It also incorporates features related to combat encounters and hacking challenges.
