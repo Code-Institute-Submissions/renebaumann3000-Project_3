@@ -42,6 +42,12 @@ class Character:
             and self.humanity >= Character.WIN_HUMANITY_THRESHOLD
         )
 
+    # Resets player and opponent thresholds 
+    def reset(self):
+        self.health = 100
+        self.empathy = 15
+        self.humanity = 15
+
 
 # Defines the main game and its interactions
 class Game:
