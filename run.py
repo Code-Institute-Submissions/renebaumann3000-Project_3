@@ -208,6 +208,7 @@ class Game:
 
                 # Reset player and opponent classes for a new game
                 def reset_all(self):
+                if self.player:
         self.player.reset()
         self.opponent.reset()
 
