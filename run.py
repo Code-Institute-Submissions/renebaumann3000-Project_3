@@ -188,6 +188,7 @@ class Game:
     # Main game loop to keep playing or restart after each round
     def play(self):
         while True:
+            self.reset_all()
             life_path = self.reset_game()
             if life_path == "a":
                 player_win, opponent_win = self.combat_encounter()
