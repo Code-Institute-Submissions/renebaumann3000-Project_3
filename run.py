@@ -206,11 +206,11 @@ class Game:
             if play_again != "y":
                 break
 
-                # Reset player and opponent classes for a new game
-                def reset_all(self):
-                if self.player:
-        self.player.reset()
-        self.opponent.reset()
+    # Reset player and opponent classes for a new game
+    def reset_all(self):
+        if self.player:
+            self.player.reset()
+            self.opponent.reset()
 
                 # Function to format and print the grid
 

@@ -1,4 +1,18 @@
-![game_logic](/assets/documentation/game_logic.png "game_logic")
+# Cyberpunk - A text based RPG
+
+## Introduction:
+This cyberpunk roleplaying game is based on the tabletop game Cyberpunk 2020 and also a small reference to the game Cyberpunk 2077.
+To stay true to an MVP, this text-based game offers some strategic options without becoming too complex. At the start, the player can choose a life path from two options.
+Hacker: In this life path, one has an attempt to crack a secret PIN. With the right PIN, the game is won immediately. With the wrong PIN, the player is caught by security and loses 50% life energy in a battle against a Cyber-Thug.
+The player can also choose the life path of an adventure.
+In this case, the player fights against the computer (Cyber Thug).
+The player can choose to "fight" or "talk" in the battle.
+Each hit by "fight" causes damage to the life energy. Life energy of 0 will mean losing the game.
+The decision for "talk", i.e. the attempt of a negotiation to de-escalate the situation, increases two values: humanity and empathy.
+When the values of humanity and empathy reach a maximum value of 100 each, the respective party has won.
+The decision to fight, however, causes the values for humanity and empathy to decrease. If both values reach 0, the fight is lost for the respective party.
+This principle allows for some strategic considerations. A battle can be lost through fighting, just as a battle can be won through negotiation.
+
 
 ## Code Breakdown:
 
