@@ -72,9 +72,17 @@ class Game:
 
     # Resets the game by taking player name and setting life path
     def reset_game(self):
-        name = input("Enter your name: ")
-        self.player = Character(name)
-        print(f"Welcome, {self.player.name} to Cyberpunk A text based RPG!")
+        while True:
+            try:
+              name = input("Enter your name: ")
+              if name.strip():  # Check if the name is not empty after stripping whitespace
+                 self.player = Character(name)
+                 print(f"Welcome, {self.player.name} to Cyberpunk A text based RPG!")
+                 break  # Exit the loop if the name is valid
+              else:
+                 raise ValueError("Name cannot be empty. Please enter your name.")
+            except ValueError as e:
+               print(e)
 
         while True:
             life_path = input(
