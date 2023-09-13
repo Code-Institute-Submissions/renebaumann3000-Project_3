@@ -13,6 +13,24 @@ When the values of humanity and empathy reach a maximum value of 100 each, the r
 The decision to fight, however, causes the values for humanity and empathy to decrease. If both values reach 0, the fight is lost for the respective party.
 This principle allows for some strategic considerations. A battle can be lost through fighting, just as a battle can be won through negotiation.
 
+## How to play:
+
+#### Enter your name:
+By beginning the game you need to enter a name.
+
+![input_name](/assets/documentation/input_name.png "input_name")
+
+#### Choose your life path:
+
+You can choose between a adventure or a hacking game.
+
+![lifepath](/assets/documentation/lifepath.png "lifepath")
+
+Life path hacker:
+The intention is to become a "real" hacker.
+To be able to enter the correct pin, you have to look at the code.
+If you can't hack, you should not choose this life path.
+This part is meant to be fun, of course.
 
 ## Code Breakdown:
 
