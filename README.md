@@ -143,7 +143,7 @@ The flowchart visualizes the different decision options and paths of the game.
 - As a user, I want my character's health, empathy, and humanity to be reset at the start of each game, so I can begin every round on an even footing.
 - As a user, I want the game to present unexpected choices and consequences based on my decisions.
 
-## Testing User Stories
+## Testing User Stories:
 
 Tested every user story of the game with Function > Expected result  > Action taken > Result
 - Document the win/ lose scenario tests with a screenshot. To test the win/ lose scenarios, the thresholds were changed.
@@ -187,10 +187,61 @@ Tested every user story of the game with Function > Expected result  > Action ta
 - IOS
 
 ## Bugs
-
+There was no need to test the application on a mobile device but as I do always a family and friends test, I found out, that the application isnt working on IOS.
+The tester was not able to enter an input. Android instead works fine.
+I get a test video for the IOS test:
 
 IOS test gif [here](https://1drv.ms/i/s!AkY3LsFaa3smgiIP-mW0U_Kx36mU?e=huGze2)
 
+## Validator Testing:
+
+#### PEP8:
+- The CI Python linter shows some formatting errors. Using Autopep8 reduces most of these errors. Nevertheless, I have decided to keep the current format despite the error messages.
+- I have looked at some code with perfect PEP8 formatting. Such code is really nicely formatted and easy to read. From top to bottom, line by line.
+Why have I decided to keep the current format? My code works fine and is easy to read. Adapting it for a perfect format takes time and can even trigger new error messages.
+From a business perspective, I would never invest time, aka money, for a well-readable and functional code that can also scale without a clear technical need. Beautiful code makes sense but should also be in relation to a time/money investment.
+
+- #### Functionality and Readability: 
+- The most crucial aspect of code is its functionality and readability. If the current code works seamlessly and is easily understandable that can be a compelling reason not to alter it.
+
+- #### Time Investment: 
+- Adapting code to a perfect PEP8 format can be time-consuming, especially in larger projects. Time is a precious resource, and it's important to use it efficiently. If the code changes don't provide clear benefits, it may be more sensible to invest that time in other development activities.
+
+- #### Potential Errors: 
+- Modifying the format of a working code can introduce unexpected errors. If the code has already been well-tested, and the changes are only for format improvement, there's a risk of introducing new problems.
+
+- #### Business Perspective: 
+- In many cases, software development is a business, and resources (time and money) must be managed carefully. It's crucial for technical decisions to align with business goals. If the current code meets the requirements and is maintainable, it may be unnecessary to invest time in cosmetic changes.
+
+- #### Without Autopep8:
+
+![without_autopep8](/assets/documentation/without_autopep8.png "without_autopep8")
+
+- #### With Autopep8:
+
+![with_autopep8](/assets/documentation/with_autopep8.png "with_autopep8")
+
+## Deploy:
+
+#### Deploy Section
+
+- I navigated to the “Deploy” section.
+- I decided to use “GitHub” as my deployment method.
+- I confirmed my connection to GitHub.
+. I searched for and connected my GitHub repository named "Project_3".
+
+#### Deployment Options
+
+- ##### Automatic Deploys:
+- This would rebuild my app every time I push a new change to GitHub.
+- ##### Manual Deploy:
+- I opted to deploy using the “deploy branch” option since it gives me more control and allows me to see the deployment logs.
+
+#### Testing the Deployed App
+
+- I clicked the link to access my deployed app and noticed the mock terminal.
+- There was no need to start it with 'python3 run.py'; it booted up automatically.
+- If I wanted, I could restart the program using the “run program” button.
 
 ## Credits:
 - ASCII Generator: https://manytools.org/hacker-tools/ascii-banner/#google_vignette
