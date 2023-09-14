@@ -113,6 +113,7 @@ This part is meant to be fun, of course.
 - The display_grid method displays character status in a tabular format.
 - The display_character_status method has been modified to call the display_grid method for character status display.
 - The display_intro method is a static method and doesn't operate on any instance-specific data or attributes of the Game class. It serves the purpose of displaying a game banner, which is a generic introductory message.
+- Try/ except block for handle empty name input.
 
 4. #### Main Execution:
 - The script checks if it's being run directly (__name__ == "__main__") and creates an instance of the Game class.
@@ -142,7 +143,56 @@ The flowchart visualizes the different decision options and paths of the game.
 - As a user, I want my character's health, empathy, and humanity to be reset at the start of each game, so I can begin every round on an even footing.
 - As a user, I want the game to present unexpected choices and consequences based on my decisions.
 
+## Testing User Stories
+
+Tested every user story of the game with Function > Expected result  > Action taken > Result
+- Document the win/ lose scenario tests with a screenshot. To test the win/ lose scenarios, the thresholds were changed.
+
+![testing](/assets/documentation/testing.png "testing")
+
+##### Player win scenario 1/ Computer 0 Health
+
+![player_heahlt_win](/assets/documentation/player_health_win.png "player_health_win")
+
+##### Player win scenario 2/ Players Empathy 100 + Humanity 100
+
+![player_talk_win](/assets/documentation/player_talk_win.png "player_talk_win")
+
+##### Player win scenario 3/ Computer 0 Empathy/ 0 Humanity
+
+![player_fight_win](/assets/documentation/player_fight_win.png "player_fight_win")
+
+##### Computer win scenario 1/ Player 0 health
+
+![computer_heahlt_win](/assets/documentation/computer_health_win.png "computer_health_win")
+
+##### Computer win scenario 2/ Computers Empathy 100 + Humanity 100
+
+![computer_talk_win](/assets/documentation/computer_talk_win.png "computer_talk_win")
+
+##### Computer win scenario 3/ Players 0 Empathy/ 0 Humanity
+
+![computer_fight_win](/assets/documentation/computer_fight_win.png "computer_fight_win")
+
+#### Fun Fact:
+
+- My mother also did a family and friends test :)
+
+![mum_testing](/assets/documentation/mum_testing.jpg "mum_testing")
+
+### Tested Desktop and Mobile Devices:
+- Chome
+- Firefox
+- Andriod
+- IOS
+
+## Bugs
+
+
+IOS test gif [here](https://1drv.ms/i/s!AkY3LsFaa3smgiIP-mW0U_Kx36mU?e=huGze2)
+
 
 ## Credits:
 - ASCII Generator: https://manytools.org/hacker-tools/ascii-banner/#google_vignette
 - PEP8 Formatter: https://black.vercel.app/
+- Inspiration: https://en.wikipedia.org/wiki/Cyberpunk_(role-playing_game)
