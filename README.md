@@ -1,5 +1,8 @@
 # Cyberpunk - A text based RPG
 
+## Requirements:
+- There are no special requirements needed for this application. Only the random import is used.
+
 ## Introduction:
 This cyberpunk roleplaying game is based on the tabletop game Cyberpunk 2020 and also a small reference to the game Cyberpunk 2077.
 To stay true to an MVP, this text-based game offers some strategic options without becoming too complex. At the start, the player can choose a life path from two options.
