@@ -226,25 +226,53 @@ From a business perspective, I would never invest time, aka money, for a well-re
 
 ## Deploy:
 
-#### Deploy Section
+#### Forking a Repo on GitHub:
 
-- I navigated to the “Deploy” section.
-- I decided to use “GitHub” as my deployment method.
-- I confirmed my connection to GitHub.
-. I searched for and connected my GitHub repository named "Project_3".
+- Navigate to the GitHub repo: https://github.com/renebaumann3000/Project_3
+- Click the "Fork" button in the top-right corner of the repo page.
+ This will create a copy of the repository under your GitHub account.
+- You can then clone or download the repo as needed.
+- Deploying on Heroku ->
 
-#### Deployment Options
+#### Heroku Setup:
 
-- ##### Automatic Deploys:
-- This would rebuild my app every time I push a new change to GitHub.
-- ##### Manual Deploy:
-- I opted to deploy using the “deploy branch” option since it gives me more control and allows me to see the deployment logs.
+- Sign up for a Heroku account if you haven't already: https://signup.heroku.com/
 
-#### Testing the Deployed App
+#### Access Deployment Configuration:
 
-- I clicked the link to access my deployed app and noticed the mock terminal.
-- There was no need to start it with 'python3 run.py'; it booted up automatically.
-- If I wanted, I could restart the program using the “run program” button.
+- Once logged into Heroku, navigate to the "Deploy" section of your app's dashboard.
+
+#### Choose Deployment Method:
+
+- Under the deployment methods, choose "GitHub" as your preferred method.
+
+#### Connect to GitHub:
+
+- Ensure your connection to GitHub is confirmed.
+- Use the search function provided in this section to locate your repository. In this context, the repository was named "Project_3". Once found, connect to it.
+
+### Deployment Options:
+
+#### Automatic Deploys: 
+- By enabling this, Heroku will automatically rebuild and redeploy the app every time you push a new change to the connected GitHub repository.
+
+#### Manual Deploy:
+
+- If you prefer more control over when the app gets deployed and the ability to view deployment logs, you can choose the "deploy branch" option.
+- When ready, you can manually initiate the deployment process for your specific branch.
+
+## Summary and self reflection:
+
+This project is my first step with Python.
+I had fun experimenting with the language.
+The short deadline for the end of the project with about 14 days unfortunately kills my creativity and happiness with the language.
+The PEP8 format also triggered more problems for me than it solved. But I get that it could helpful in bigger projects and also for bigger teams to have all on the same page...
+For example, I started to extend the hacking game so that the player can actually guess a pin.
+Unfortunately, there is not enough time for a final integration.
+In the future, though, I might expand that.
+
+![hacking](/assets/documentation/hacking.png "hacking")
+
 
 ## Credits:
 - ASCII Generator: https://manytools.org/hacker-tools/ascii-banner/#google_vignette
